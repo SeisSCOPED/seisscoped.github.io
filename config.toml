@@ -3,27 +3,21 @@ languageCode = "en-us"
 title = "SCOPED"
 theme = "tranquilpeak"
 
-paginate = 3
-
-summaryLength = 30
-enableEmoji = true
-pygmentsCodeFences = true
-
 enableRobotsTXT = true
 
 [[menu.main]]
     name = "Home" 
-    weight = 10 
+    weight = 1 
     url = "/" 
 [[menu.main]]
     name = "About"
-    weight = 20
+    weight = 2
     url = "/about/"
 [[menu.main]]
     name = "People"
-    weight = 30
+    weight = 3
     url = "/people/"
 [[menu.main]]
     name = "News"
-    weight = 40
+    weight = 4
     url = "/news/"
