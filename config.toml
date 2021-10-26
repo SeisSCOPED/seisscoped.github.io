@@ -21,3 +21,15 @@ enableRobotsTXT = true
     name = "News"
     weight = 4
     url = "/news/"
+
+# -------------
+# Customization
+# -------------
+[params]
+  coverImage = "images/cover.jpg"
+
+  imageGallery = true
+
+  thumbnailImage = true
+  thumbnailImagePosition = "bottom"
+  autoThumbnailImage = true
