@@ -1,0 +1,29 @@
+baseURL = "https://www.seisscoped.org/"
+languageCode = "en-us"
+title = "SCOPED"
+theme = "tranquilpeak"
+
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
+
+enableRobotsTXT = true
+
+[[menu.main]]
+    name = "Home" 
+    weight = 10 
+    url = "/" 
+[[menu.main]]
+    name = "About"
+    weight = 20
+    url = "/about/"
+[[menu.main]]
+    name = "People"
+    weight = 30
+    url = "/people/"
+[[menu.main]]
+    name = "News"
+    weight = 40
+    url = "/news/"
