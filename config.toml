@@ -13,14 +13,6 @@ enableRobotsTXT = true
     name = "About"
     weight = 2
     url = "/about/"
-[[menu.main]]
-    name = "People"
-    weight = 3
-    url = "/people/"
-[[menu.main]]
-    name = "News"
-    weight = 4
-    url = "/news/"
 
 # -------------
 # Customization
