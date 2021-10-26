@@ -1,7 +1,6 @@
 ---
 title: "SCOPED"
 date: 2021-10-27T04:03:22+08:00
-draft: true
 ---
 
 SCOPED is an NSF-funded project and part of the NSF CSSI program. 
