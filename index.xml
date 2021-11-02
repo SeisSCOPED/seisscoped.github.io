@@ -5,37 +5,14 @@
     <link>https://seisscoped.github.io/</link>
     <description>Recent content on SCOPED</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 03 Nov 2021 01:45:54 +0800</lastBuildDate><atom:link href="https://seisscoped.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>People</title>
-      <link>https://seisscoped.github.io/people/</link>
-      <pubDate>Wed, 03 Nov 2021 02:15:10 +0800</pubDate>
-      
-      <guid>https://seisscoped.github.io/people/</guid>
-      <description>Carl Tape
-Ebru Bozdag
-Marine Denolle
-Felix Waldhauser
-Ian Wang</description>
-    </item>
-    
-    <item>
-      <title>Get_started</title>
-      <link>https://seisscoped.github.io/news/get_started/</link>
-      <pubDate>Wed, 03 Nov 2021 01:45:54 +0800</pubDate>
-      
-      <guid>https://seisscoped.github.io/news/get_started/</guid>
-      <description>SCOPED is initiated!</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://seisscoped.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SCOPED</title>
-      <link>https://seisscoped.github.io/about/scoped/</link>
-      <pubDate>Wed, 27 Oct 2021 04:03:22 +0800</pubDate>
+      <link>https://seisscoped.github.io/</link>
+      <pubDate>Wed, 03 Nov 2021 02:45:56 +0800</pubDate>
       
-      <guid>https://seisscoped.github.io/about/scoped/</guid>
-      <description>SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes.</description>
+      <guid>https://seisscoped.github.io/</guid>
+      <description>This is SCOPED home</description>
     </item>
     
   </channel>
