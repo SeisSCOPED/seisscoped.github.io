@@ -1,4 +1,4 @@
-baseurl = "https://seisscoped.github.io/"
+baseurl = "https://seisscoped.org/"
 languageCode = "en-us"
 title = "SCOPED"
 theme = "ananke"
