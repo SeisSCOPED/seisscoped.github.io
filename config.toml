@@ -22,13 +22,17 @@ enableRobotsTXT = true
     weight = 10 
     url = "/" 
 [[menu.main]]
-    name = "News" 
-    weight = 20 
-    url = "/news/" 
-[[menu.main]]
     name = "About"
-    weight = 30
+    weight = 20
     url = "/about/"
+[[menu.main]]
+    name = "People" 
+    weight = 30 
+    url = "/people/" 
+[[menu.main]]
+    name = "News" 
+    weight = 40 
+    url = "/news/" 
 
 # -------------
 # Customization
