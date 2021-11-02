@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SCOPED</title>
-    <link>https://seisscoped.github.io/</link>
+    <link>https://seisscoped.org/</link>
     <description>Recent content on SCOPED</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Nov 2021 01:45:54 +0800</lastBuildDate><atom:link href="https://seisscoped.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Nov 2021 01:45:54 +0800</lastBuildDate><atom:link href="https://seisscoped.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>People</title>
-      <link>https://seisscoped.github.io/people/</link>
+      <link>https://seisscoped.org/people/</link>
       <pubDate>Wed, 03 Nov 2021 02:15:10 +0800</pubDate>
       
-      <guid>https://seisscoped.github.io/people/</guid>
+      <guid>https://seisscoped.org/people/</guid>
       <description>Carl Tape
 Ebru Bozdag
 Marine Denolle
@@ -23,28 +23,28 @@ COLLABORATORS:</description>
     
     <item>
       <title>Get_started</title>
-      <link>https://seisscoped.github.io/news/get_started/</link>
+      <link>https://seisscoped.org/news/get_started/</link>
       <pubDate>Wed, 03 Nov 2021 01:45:54 +0800</pubDate>
       
-      <guid>https://seisscoped.github.io/news/get_started/</guid>
+      <guid>https://seisscoped.org/news/get_started/</guid>
       <description>SCOPED is initiated!</description>
     </item>
     
     <item>
       <title>SCOPED</title>
-      <link>https://seisscoped.github.io/about/scoped/</link>
+      <link>https://seisscoped.org/about/scoped/</link>
       <pubDate>Wed, 27 Oct 2021 04:03:22 +0800</pubDate>
       
-      <guid>https://seisscoped.github.io/about/scoped/</guid>
+      <guid>https://seisscoped.org/about/scoped/</guid>
       <description>SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://seisscoped.github.io/news/test1/</link>
+      <link>https://seisscoped.org/news/test1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://seisscoped.github.io/news/test1/</guid>
+      <guid>https://seisscoped.org/news/test1/</guid>
       <description>we are stoked! We are in the process of building the team, hiring amazing students and postdocs, organize the software, and computing platform. Stay tuned for updates.</description>
     </item>
     
