@@ -38,5 +38,14 @@ Ian Wang</description>
       <description>SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://seisscoped.github.io/news/test1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seisscoped.github.io/news/test1/</guid>
+      <description>we are stoked! We are in the process of building the team, hiring amazing students and postdocs, organize the software, and computing platform. Stay tuned for updates.</description>
+    </item>
+    
   </channel>
 </rss>
