@@ -112,3 +112,6 @@ enableRobotsTXT = true
     name = "Linkedin"
     icon = "fab fa-linkedin"
     url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
+
+  [[params.customCSS]]
+    href = "css/custom.css"
