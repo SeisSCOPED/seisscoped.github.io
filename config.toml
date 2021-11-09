@@ -1,9 +1,11 @@
 baseurl = "https://seisscoped.org/"
 languageCode = "en-us"
+defaultContentLanguage = "en-us"
 title = "SCOPED"
-theme = "ananke"
-
-paginate = 3
+theme = "hugo-tranquilpeak-theme"
+disqusShortname = "hugo-tranquilpeak-theme"
+paginate = 7
+canonifyurls = true
 
 summaryLength = 30
 enableEmoji = true
@@ -11,37 +13,102 @@ pygmentsCodeFences = true
 
 enableRobotsTXT = true
 
+[markup]
+  # Set startLevel = 1 to support # title (<h1>title</h1>) otherwise table of content is blank/empty
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 1
+
 [author]
     name = "SCOPED Team"
-    github = "https://github.com/SeisSCOPED"
-    facebook = "https://business.facebook.com/SeisScoped/"
-    twitter = "https://twitter.com/SEIS_SCOPED"
+    bio = "SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes."
+    location = "USA"
+    picture = "images/scoped_logo.jpg"
+    twitter = "SEIS_SCOPED"
 
 [[menu.main]]
-    name = "Home" 
-    weight = 10 
+    name = "Home"
+    identifier = "home" 
+    weight = 10
+    pre = "<i class=\"sidebar-button-icon fas fa-lg fa-home\" aria-hidden=\"true\"></i>"
     url = "/" 
 [[menu.main]]
     name = "About"
+    identifier = "about"
     weight = 20
+    pre = "<i class=\"sidebar-button-icon fas fa-lg fa-info\" aria-hidden=\"true\"></i>"
     url = "/about/"
 [[menu.main]]
     name = "People" 
+    identifier = "people"
     weight = 30 
+    pre = "<i class=\"sidebar-button-icon fas fa-lg fa-users\" aria-hidden=\"true\"></i>"
     url = "/people/" 
 [[menu.main]]
     name = "News" 
+    identifier = "news"
     weight = 40 
+    pre = "<i class=\"sidebar-button-icon fas fa-lg fa-newspaper\" aria-hidden=\"true\"></i>"
     url = "/news/" 
+
+[[menu.links]]
+  weight = 0
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
+  url = "https://github.com/SeisSCOPED"
+[[menu.links]]
+  weight = 1
+  identifier = "facebook"
+  name = "Facebook"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-facebook\" aria-hidden=\"true\"></i>"
+  url = "https://business.facebook.com/SeisScoped"
+[[menu.links]]
+  weight = 2
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-twitter\" aria-hidden=\"true\"></i>"
+  url = "https://twitter.com/SEIS_SCOPED"
+
+[[menu.misc]]
+  weight = 0
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
+  url = "/index.xml"
 
 # -------------
 # Customization
 # -------------
 [params]
-  coverImage = "images/cover.jpg"
+  sidebarBehavior = 1
+
+  coverImage = "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg"
 
   imageGallery = true
 
   thumbnailImage = true
   thumbnailImagePosition = "bottom"
   autoThumbnailImage = true
+
+  # ---------------
+  # Sharing options
+  # ---------------
+  # Comment and uncomment to enable or disable sharing options
+  # If you wanna add a sharing option, read user documentation :
+  # Tranquilpeak configuration > Theme configuration > sharing-options
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fab fa-facebook-square"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin"
+    url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
