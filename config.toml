@@ -84,7 +84,7 @@ enableRobotsTXT = true
 [params]
   sidebarBehavior = 1
 
-  coverImage = "static/images/DASpng.png"
+  coverImage = "static/images/DASpng.jpg"
 
   imageGallery = true
 
