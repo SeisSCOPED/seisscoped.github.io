@@ -84,8 +84,8 @@ enableRobotsTXT = true
 [params]
   sidebarBehavior = 1
 
-  coverImage = "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg"
-  # coverImage = "static/images/DASpng.jpg"
+  #coverImage = "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg"
+  coverImage = "images/DASpng.jpg"
 
   imageGallery = true
 
