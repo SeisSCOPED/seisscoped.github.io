@@ -70,6 +70,12 @@ enableRobotsTXT = true
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-twitter\" aria-hidden=\"true\"></i>"
   url = "https://twitter.com/SEIS_SCOPED"
+[[menu.links]]
+  weight = 3
+  identifier = "youtube"
+  name = "Youtube"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-youtube\" aria-hidden=\"true\"></i>"
+  url = "https://www.youtube.com/@scoped6259"
 
 [[menu.misc]]
   weight = 0
