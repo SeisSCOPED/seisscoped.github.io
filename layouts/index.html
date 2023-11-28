@@ -10,12 +10,14 @@
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
 	<img class="contain" src="/images/SCOPED_slide.jpg" alt="SCOPED Slide">
         <section class="postShorten-group main-content-wrap">
+          {{ $aboutPage := .Site.GetPage "scoped.md" }} <!-- Fetch the "scoped" page -->
+          {{ $aboutPage.Content }} <!-- Display the content of the "scoped" page -->
           {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections ) }}
           {{ range $paginator.Pages }}
             {{ .Render "summary" }}
           {{ end }}
           {{ partial "pagination.html" . }}
-        </section>
+	</section>
         {{ partial "footer.html" . }}
       </div>
     </div>
