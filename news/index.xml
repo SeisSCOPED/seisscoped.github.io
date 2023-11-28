@@ -7,20 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Nov 2021 01:45:54 +0800</lastBuildDate>
-    <atom:link href="https://seisscoped.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://seisscoped.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Get_started</title>
       <link>https://seisscoped.org/news/get_started/</link>
       <pubDate>Wed, 03 Nov 2021 01:45:54 +0800</pubDate>
+      
       <guid>https://seisscoped.org/news/get_started/</guid>
       <description>SCOPED is initiated!</description>
     </item>
+    
+    <item>
+      <title></title>
+      <link>https://seisscoped.org/news/agu_2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seisscoped.org/news/agu_2023/</guid>
+      <description>AGU 2023 We will be show-casing research and CyberInfrastructure at AGU! Check out our Group poster</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://seisscoped.org/news/test1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://seisscoped.org/news/test1/</guid>
       <description>we are stoked! We are in the process of building the team, hiring amazing students and postdocs, organize the software, and computing platform. Stay tuned for updates.</description>
     </item>
+    
   </channel>
 </rss>
