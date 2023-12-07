@@ -1,55 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://seisscoped.org/people/</loc>
     <lastmod>2022-12-08T02:15:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seisscoped.org/</loc>
-    <lastmod>2022-12-08T02:15:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/news/get_started/</loc>
     <lastmod>2021-11-03T01:45:54+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/news/</loc>
     <lastmod>2021-11-03T01:45:54+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://seisscoped.org/</loc>
+    <lastmod>2021-11-03T01:45:54+08:00</lastmod>
+  </url><url>
     <loc>https://seisscoped.org/about/</loc>
     <lastmod>2021-10-27T04:03:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/about/scoped/</loc>
     <lastmod>2021-10-27T04:03:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/about/media/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/news/agu_2023/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/news/test1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://seisscoped.org/tags/</loc>
   </url>
-  
 </urlset>
