@@ -77,7 +77,7 @@ enableRobotsTXT = true
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-youtube\" aria-hidden=\"true\"></i>"
   url = "https://www.youtube.com/@scoped6259"
 [[menu.links]]
-  weight = 0
+  weight = 4
   identifier = "gateway"
   name = "Gateway
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-computer\" aria-hidden=\"true\"></i>"
