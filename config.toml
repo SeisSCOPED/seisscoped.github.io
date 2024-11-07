@@ -79,7 +79,7 @@ enableRobotsTXT = true
 [[menu.links]]
   weight = 4
   identifier = "gateway"
-  name = "Gateway
+  name = "Gateway"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-computer\" aria-hidden=\"true\"></i>"
   url = "https://scoped.tapis.io"
 
