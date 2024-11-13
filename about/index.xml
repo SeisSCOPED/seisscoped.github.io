@@ -4,7 +4,7 @@
     <title>Abouts on SCOPED</title>
     <link>https://seisscoped.org/about/</link>
     <description>Recent content in Abouts on SCOPED</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Oct 2021 04:03:22 +0800</lastBuildDate>
     <atom:link href="https://seisscoped.org/about/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://seisscoped.org/about/scoped/</link>
       <pubDate>Wed, 27 Oct 2021 04:03:22 +0800</pubDate>
       <guid>https://seisscoped.org/about/scoped/</guid>
-      <description>SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes.</description>
+      <description>&lt;p&gt;SCOPED is an NSF-funded project and part of the NSF CSSI program.&#xA;The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes. Continue reading to get the list of supported software.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://seisscoped.org/about/media/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://seisscoped.org/about/media/</guid>
-      <description>Watch our Open Science Lecture (Marine Denolle and Alice Gabriel)</description>
+      <description>&lt;p&gt;Watch our Open Science Lecture (Marine Denolle and Alice Gabriel)&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtu.be/WeZ2vJxBuTg?si=qflyB2mjWFC0yovg&#34;&gt;&lt;img src=&#34;openscienceMD2023&#34; alt=&#34;IMAGE ALT TEXT HERE&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

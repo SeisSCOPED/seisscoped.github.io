@@ -4,7 +4,7 @@
     <title>News on SCOPED</title>
     <link>https://seisscoped.org/news/</link>
     <description>Recent content in News on SCOPED</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Nov 2021 01:45:54 +0800</lastBuildDate>
     <atom:link href="https://seisscoped.org/news/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>https://seisscoped.org/news/get_started/</link>
       <pubDate>Wed, 03 Nov 2021 01:45:54 +0800</pubDate>
       <guid>https://seisscoped.org/news/get_started/</guid>
-      <description>SCOPED is initiated!</description>
+      <description>&lt;p&gt;SCOPED is initiated!&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://seisscoped.org/news/agu_2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://seisscoped.org/news/agu_2023/</guid>
-      <description>AGU 2023 We will be show-casing research and CyberInfrastructure at AGU! Check out our Group poster</description>
+      <description>&lt;h2 id=&#34;agu-2023&#34;&gt;AGU 2023&lt;/h2&gt;&#xA;&lt;p&gt;We will be show-casing research and CyberInfrastructure at AGU!&#xA;Check out our &lt;a href=&#34;!https://docs.google.com/presentation/d/1ekEv4T8Oanuv0EpwWBotoCTsu_N4cXc3iR9pp1TcBL0/edit#slide=id.p&#34;&gt;Group poster&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://seisscoped.org/news/test1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://seisscoped.org/news/test1/</guid>
-      <description>we are stoked! We are in the process of building the team, hiring amazing students and postdocs, organize the software, and computing platform. Stay tuned for updates.</description>
+      <description>&lt;p&gt;we are stoked!&#xA;We are in the process of building the team, hiring amazing students and postdocs, organize the software, and computing platform. Stay tuned for updates.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
