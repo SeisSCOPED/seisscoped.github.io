@@ -81,7 +81,7 @@ enableRobotsTXT = true
   identifier = "gateway"
   name = "Gateway"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tv\" aria-hidden=\"true\"></i>"
-  url = "https://scoped.tapis.io"
+  url = "/gateway/"
 
 # -------------
 # Customization
