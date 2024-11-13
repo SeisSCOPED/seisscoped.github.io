@@ -20,13 +20,6 @@ enableRobotsTXT = true
     ordered = true
     startLevel = 1
 
-[author]
-    name = "SCOPED Team"
-    bio = "SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes."
-    location = "USA"
-    picture = "images/scoped_logo.jpg"
-    twitter = "SEIS_SCOPED"
-
 [[menu.main]]
     name = "Home"
     identifier = "home" 
@@ -94,6 +87,16 @@ enableRobotsTXT = true
 # Customization
 # -------------
 [params]
+
+  # ------
+  # Author
+  # ------
+  author.name = "SCOPED Team"
+  author.bio = "SCOPED is an NSF-funded project and part of the NSF CSSI program. The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes."
+  author.location = "USA"
+  author.picture = "images/scoped_logo.jpg"
+  author.twitter = "SEIS_SCOPED"
+
   sidebarBehavior = 1
 
   #coverImage = "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg"
