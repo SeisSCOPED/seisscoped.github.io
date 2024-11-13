@@ -76,12 +76,6 @@ enableRobotsTXT = true
   name = "Youtube"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-youtube\" aria-hidden=\"true\"></i>"
   url = "https://www.youtube.com/@scoped6259"
-[[menu.links]]
-  weight = 4
-  identifier = "gateway"
-  name = "Gateway"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-computer\" aria-hidden=\"true\"></i>"
-  url = "https://scoped.tapis.io"
 
 [[menu.misc]]
   weight = 0
@@ -89,6 +83,12 @@ enableRobotsTXT = true
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
+[[menu.misc]]
+  weight = 1
+  identifier = "gateway"
+  name = "Gateway"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tv\" aria-hidden=\"true\"></i>"
+  url = "https://scoped.tapis.io"
 
 # -------------
 # Customization
