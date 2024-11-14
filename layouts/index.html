@@ -8,7 +8,7 @@
         class="{{ with .Params.coverimage }}hasCover{{ end }}
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-	<img class="contain" src="/images/SCOPED_slide.jpg" alt="SCOPED Slide">
+	<img class="contain" src="/images/SCOPED_slide.jpg" style="width: 100%;" alt="SCOPED Slide">
         <section class="postShorten-group main-content-wrap">
           {{ $aboutPage := .Site.GetPage "scoped.md" }} <!-- Fetch the "scoped" page -->
           {{ $aboutPage.Content }} <!-- Display the content of the "scoped" page -->
