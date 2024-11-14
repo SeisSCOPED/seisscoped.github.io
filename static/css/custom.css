@@ -12,8 +12,8 @@ img {
     top: -1cm;
     left: -1cm;
     z-index: -1;
-    -webkit-filter: blur(6px) brightness(30%) contrast(60%);
-    filter: blur(6px) brightness(30%) contrast(60%);
+    -webkit-filter: blur(6px) brightness(100%) contrast(30%) saturate(70%);
+    filter: blur(6px) brightness(100%) contrast(30%) saturate(70%);
 }
 
 .contain {
