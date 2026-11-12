@@ -139,8 +139,9 @@
 .scoped-section-head p { color: #5c7183; font-size: 15px; margin: 0; }
 /* Keep the original image assets and the seismology visual identity. */
 #sidebar {
-  background-color: #e7eef4;
-  background-image: linear-gradient(rgba(241, 248, 252, .88), rgba(241, 248, 252, .92)),
+  /* The existing theme uses light sidebar text; keep the profile dark for contrast. */
+  background-color: #102c3f;
+  background-image: linear-gradient(rgba(10, 31, 48, .76), rgba(10, 31, 48, .84)),
                     url('/images/DASpng.jpg');
   background-size: cover;
   background-position: center;
