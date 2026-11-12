@@ -6,12 +6,16 @@ date: 2021-10-27T04:03:22+08:00
 SCOPED is an NSF-funded project and part of the NSF CSSI program. 
 The SCOPED project goal is to establish a novel hybrid cloud+HPC computational platform for use by the broader scientific community that combines large-scale processing and modeling of seismic data with a suite of open-source seismic codes. Continue reading to get the list of supported software.
 
+{{< nsf-funding >}}
+
 ## AGU 2023
 * Find out our group SCOPED poster **[Denolle et al., 2023](https://docs.google.com/presentation/d/1FMR0QH62oBuadAWXQ7ENPMEj7cuv9mORD41QSpwOlDs/edit?usp=sharing)**.
 
 
 
-## SCOPED CODES:
+## SCOPED infrastructure and research software
+
+The links below include SCOPED project infrastructure and other research software used in scientific applications or workshops. Listing a tool here does not necessarily mean it was developed with SCOPED funding.
 SCOPED website: https://seisscoped.org/ 
 
 SCOPED container registry: https://github.com/orgs/SeisSCOPED/packages 

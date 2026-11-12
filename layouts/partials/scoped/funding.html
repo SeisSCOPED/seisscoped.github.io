@@ -1,0 +1,15 @@
+<section class="scoped-funding" aria-labelledby="scoped-funding-title">
+  <div class="scoped-funding-intro">
+    <span class="scoped-eyebrow">Funding acknowledgment</span>
+    <h2 id="scoped-funding-title">NSF CSSI support</h2>
+    <p>SCOPED was supported by NSF CSSI (Cyberinfrastructure Systems for Scientific Innovation) awards to the following institutions:</p>
+  </div>
+  <ul class="scoped-award-list">
+    {{ range site.Data.nsf_awards.awards }}
+      <li>
+        <span>{{ .institution }}</span>
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID={{ .id }}">OAC {{ .id }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
