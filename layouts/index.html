@@ -1,24 +1,105 @@
 {{ partial "head.html" . }}
-  <body>
-    <div id="blog">
-      {{ partial "header.html" . }}
-      {{ partial "sidebar.html" . }}
-      {{ partial "post/header-cover.html" . }}
-      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
-        class="{{ with .Params.coverimage }}hasCover{{ end }}
-               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
-               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-	<img class="contain" src="/images/SCOPED_slide.jpg" style="width: 100%;" alt="SCOPED Slide">
-        <section class="postShorten-group main-content-wrap">
-          {{ $aboutPage := .Site.GetPage "scoped.md" }} <!-- Fetch the "scoped" page -->
-          {{ $aboutPage.Content }} <!-- Display the content of the "scoped" page -->
-          {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections ) }}
-          {{ range $paginator.Pages }}
-            {{ .Render "summary" }}
-          {{ end }}
-          {{ partial "pagination.html" . }}
-	</section>
-        {{ partial "footer.html" . }}
-      </div>
+<body>
+  <div id="blog">
+    {{ partial "header.html" . }}
+    {{ partial "sidebar.html" . }}
+    {{ partial "post/header-cover.html" . }}
+    <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+         class="{{ with .Params.coverimage }}hasCover{{ end }}
+                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+      <main id="content" class="scoped-home">
+        <section class="scoped-hero" aria-labelledby="scoped-hero-heading">
+          <div class="scoped-hero-copy">
+            <div class="scoped-hero-brand">
+              <img src="{{ "images/scoped_logo.jpg" | relURL }}" alt="Original SCOPED project logo" width="104" height="104" />
+              <span>NSF CSSI &nbsp;/&nbsp; SCOPED</span>
+            </div>
+            <h1 id="scoped-hero-heading">Seismic research, <em>connected.</em></h1>
+            <p>SCOPED (Seismic Computational Platform for Empowering Discovery) brings open-source seismic software and research workflows to hybrid cloud and high-performance computing environments.</p>
+            <div class="scoped-hero-actions">
+              <a class="scoped-btn scoped-btn-primary" href="{{ "/about/scoped/" | relURL }}">Explore SCOPED</a>
+              <a class="scoped-btn scoped-btn-secondary" href="{{ "/people/" | relURL }}">Meet the team</a>
+            </div>
+          </div>
+          <div class="scoped-hero-graphic" aria-label="Stylized seismic waveform and computing platforms" role="img">
+            <div class="scoped-graphic-top"><span class="scoped-graphic-light" aria-hidden="true"></span> SEISMIC SIGNALS</div>
+            <svg viewBox="0 0 520 184" class="scoped-seismogram" focusable="false" aria-hidden="true">
+              <defs><linearGradient id="wave-color" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5fbed1"/><stop offset="1" stop-color="#91e4c8"/></linearGradient></defs>
+              <path class="scoped-wave-grid" d="M0 30H520 M0 92H520 M0 154H520 M65 0V184 M130 0V184 M195 0V184 M260 0V184 M325 0V184 M390 0V184 M455 0V184"/>
+              <path class="scoped-wave-shadow" d="M0 92 L40 92 53 87 67 97 80 92 94 92 108 76 123 113 138 92 152 86 168 101 184 92 195 92 208 53 219 143 231 92 245 34 257 167 268 92 282 63 297 124 308 92 323 92 337 76 350 109 364 92 378 92 395 86 408 100 425 92 520 92"/>
+              <path class="scoped-wave-line" d="M0 92 L40 92 53 87 67 97 80 92 94 92 108 76 123 113 138 92 152 86 168 101 184 92 195 92 208 53 219 143 231 92 245 34 257 167 268 92 282 63 297 124 308 92 323 92 337 76 350 109 364 92 378 92 395 86 408 100 425 92 520 92"/>
+            </svg>
+            <div class="scoped-compute-strip"><span>SEISMIC DATA</span><span>CONTAINERS</span><span>CLOUD + HPC</span></div>
+          </div>
+        </section>
+
+        <section class="scoped-section scoped-mission" aria-labelledby="scoped-mission-title">
+          <div class="scoped-section-head">
+            <span class="scoped-eyebrow">Mission</span>
+            <h2 id="scoped-mission-title">Supporting research across seismic data, cloud and HPC</h2>
+            <p>SCOPED connects open-source seismic workflows and research computing to make data-intensive analysis and numerical modeling more accessible to the seismology community.</p>
+          </div>
+        </section>
+
+        <section class="scoped-section scoped-figures-section" aria-labelledby="scoped-overview-title">
+          <div class="scoped-section-head">
+            <span class="scoped-eyebrow">Platform overview</span>
+            <h2 id="scoped-overview-title">Science and cyberinfrastructure</h2>
+          </div>
+          <div class="scoped-original-figures">
+            <figure class="scoped-figure scoped-figure-science">
+              <div class="scoped-figure-art">
+                <a class="scoped-figure-image-link" href="{{ "images/scoped_science_overview.png" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="Open the original science overview image at full resolution">
+                  <img src="{{ "images/scoped_science_overview.png" | relURL }}" width="1050" height="1200" loading="lazy" decoding="async" alt="SCOPED science overview connecting seismic data, HPC and cloud computing to wavefield simulation, data analysis, Earth structure and evolution, and seismic source monitoring"/>
+                </a>
+              </div>
+              <figcaption>Seismic data, computing and science applications</figcaption>
+            </figure>
+            <figure class="scoped-figure scoped-figure-platform">
+              <div class="scoped-figure-art scoped-diagram-scroll">
+                <a class="scoped-figure-image-link" href="{{ "images/scoped_platform_schematic.png" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="Open the original SCOPED platform schematic at full resolution">
+                  <img src="{{ "images/scoped_platform_schematic.png" | relURL }}" width="1631" height="886" loading="lazy" decoding="async" alt="SCOPED platform schematic with users, the Tapis Gateway, containers, computing applications, laptops, HPC clusters, cloud resources, SeismoDB, SCOPED Data Archive, and external data facilities"/>
+                </a>
+              </div>
+              <figcaption>SCOPED computing and data architecture</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        {{ partial "scoped/funding.html" . }}
+
+        <section class="scoped-section" aria-labelledby="scoped-resources-title">
+          <div class="scoped-section-head">
+            <span class="scoped-eyebrow">Open science</span>
+            <h2 id="scoped-resources-title">Resources &amp; software</h2>
+            <p>Discover the SCOPED infrastructure and software used in the project's research and workshops.</p>
+          </div>
+          <div class="scoped-resource-grid">
+            <a href="{{ "/gateway/" | relURL }}" class="scoped-resource"><span>SCOPED PLATFORM</span><strong>Gateway</strong><small>Launch the SCOPED Gateway <b aria-hidden="true">→</b></small></a>
+            <a href="https://github.com/orgs/SeisSCOPED/packages" class="scoped-resource"><span>SCOPED INFRASTRUCTURE</span><strong>Container registry</strong><small>Explore project container packages <b aria-hidden="true">↗</b></small></a>
+            <a href="https://github.com/SeisSCOPED/container-base" class="scoped-resource"><span>SCOPED INFRASTRUCTURE</span><strong>Base container</strong><small>View the shared container base <b aria-hidden="true">↗</b></small></a>
+            <a href="{{ "/about/scoped/" | relURL }}" class="scoped-resource"><span>RESEARCH ECOSYSTEM</span><strong>Scientific software</strong><small>Browse seismic codes and workflows <b aria-hidden="true">→</b></small></a>
+          </div>
+        </section>
+
+        <section class="scoped-section scoped-people" aria-labelledby="scoped-people-title">
+          <div class="scoped-section-head">
+            <span class="scoped-eyebrow">Project team</span>
+            <h2 id="scoped-people-title">A collaboration across five institutions</h2>
+          </div>
+          <div class="scoped-team-grid">
+            {{ range site.Data.nsf_awards.awards }}
+              <div class="scoped-team-item">
+                <span>{{ .institution }}</span>
+                <strong>{{ delimit .team " · " }}</strong>
+              </div>
+            {{ end }}
+          </div>
+          <a class="scoped-more-link" href="{{ "/people/" | relURL }}">See the full People page <span aria-hidden="true">→</span></a>
+        </section>
+      </main>
+      {{ partial "footer.html" . }}
     </div>
-{{ partial "foot.html" . }}
+  </div>
+  {{ partial "foot.html" . }}

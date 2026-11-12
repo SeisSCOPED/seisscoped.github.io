@@ -1,0 +1,26 @@
+# NSF CSSI collaborative awards and editable homepage team names.
+# Names are displayed on the homepage in the order specified here.
+[[awards]]
+institution = "University of Alaska Fairbanks"
+id = "2104052"
+team = ["Carl Tape"]
+
+[[awards]]
+institution = "Colorado School of Mines"
+id = "2103621"
+team = ["Ebru Bozdag"]
+
+[[awards]]
+institution = "University of Washington"
+id = "2103701"
+team = ["Marine Denolle"]
+
+[[awards]]
+institution = "Columbia University"
+id = "2103741"
+team = ["Felix Waldhauser"]
+
+[[awards]]
+institution = "The University of Texas at Austin"
+id = "2103494"
+team = ["Ian Wang", "Wenyang Zhang"]
