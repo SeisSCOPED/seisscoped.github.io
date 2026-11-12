@@ -10,8 +10,9 @@
   top: -1cm;
   left: -1cm;
   z-index: -1;
-  -webkit-filter: blur(6px) brightness(100%) contrast(30%) saturate(70%);
-  filter: blur(6px) brightness(100%) contrast(30%) saturate(70%);
+  -webkit-filter: grayscale(35%) blur(4px);
+  filter: grayscale(35%) blur(4px);
+  opacity: .08;
 }
 .contain { object-fit: contain; }
 
@@ -23,8 +24,8 @@
   max-width: 1270px;
   margin: 0 auto;
   padding: 38px clamp(18px, 3vw, 48px) 64px;
-  /* Original seismic-profile photograph is visible beneath the new content. */
-  background: linear-gradient(rgba(247, 249, 252, .91), rgba(247, 249, 252, .94)),
+  /* One barely visible seismic profile across the main content: no competing image panels. */
+  background: linear-gradient(rgba(249, 251, 253, .975), rgba(249, 251, 253, .985)),
               url('/images/DASpng.jpg') center top / cover no-repeat;
   color: #19334b;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -44,8 +45,7 @@
   border: 1px solid #dbe6ee;
   border-radius: 17px;
   padding: clamp(24px, 3.5vw, 48px);
-  background: linear-gradient(105deg, rgba(255,255,255,.97) 26%, rgba(248,251,254,.85) 64%, rgba(235,244,250,.69)),
-              url('/images/DASpng.jpg') center / cover no-repeat;
+  background: linear-gradient(125deg, rgba(255,255,255,.97), rgba(239,247,251,.95));
   box-shadow: 0 12px 34px rgba(12, 44, 75, .055);
 }
 .scoped-hero-copy, .scoped-hero-graphic { min-width: 0; }
@@ -100,7 +100,7 @@
 .scoped-home .scoped-btn-secondary:hover { background: #e9f3f8; }
 .scoped-hero-graphic {
   color: #e5f3f9;
-  background-image: linear-gradient(145deg, rgba(10, 45, 71, .92), rgba(8, 40, 67, .9)), url('/images/scoped_banner.jpg');
+  background-image: linear-gradient(145deg, #133b52, #184760);
   background-position: center;
   background-size: cover;
   padding: 23px 20px 18px;
@@ -137,34 +137,6 @@
   line-height: 1.2;
 }
 .scoped-section-head p { color: #5c7183; font-size: 15px; margin: 0; }
-/* Keep the original image assets and the seismology visual identity. */
-#sidebar {
-  /* The existing theme uses light sidebar text; keep the profile dark for contrast. */
-  background-color: #102c3f;
-  background-image: linear-gradient(rgba(10, 31, 48, .76), rgba(10, 31, 48, .84)),
-                    url('/images/DASpng.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.scoped-seismic-band {
-  display: flex;
-  align-items: flex-end;
-  min-height: 136px;
-  margin-top: 20px;
-  padding: 25px;
-  border: 1px solid #cbdce5;
-  border-radius: 13px;
-  overflow: hidden;
-  background: linear-gradient(90deg, rgba(12, 44, 70, .79), rgba(12, 44, 70, .12)),
-              url('/images/DASpng.jpg') center 43% / cover no-repeat;
-}
-.scoped-seismic-band span {
-  font-size: 11px;
-  font-weight: 750;
-  letter-spacing: .12em;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
-}
 /* Display the two original standalone SCOPED images without cropping or redrawing.
    Keep the original logo, navigation and seismic background unchanged. */
 .scoped-mission { margin-top: 36px; }
@@ -180,11 +152,11 @@
   padding: clamp(12px, 2.3vw, 25px);
   box-shadow: 0 8px 26px rgba(11, 45, 70, .035);
 }
-.scoped-figure-science { max-width: 760px; }
-.scoped-figure-platform { max-width: 1160px; }
+.scoped-figure-science { max-width: 100%; }
+.scoped-figure-platform { max-width: 100%; }
 .scoped-figure-art { background: #fff; }
 .scoped-figure .scoped-figure-image-link { display: block; }
-.scoped-figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+.scoped-figure img { display: block; width: 100%; max-width: 100%; height: auto; min-width: 0; object-fit: contain; }
 .scoped-figure figcaption {
   margin: 13px 0 1px;
   color: #577185;
@@ -192,8 +164,7 @@
   line-height: 1.45;
   text-align: center;
 }
-.scoped-figure-platform .scoped-diagram-scroll { overflow-x: auto; overflow-y: hidden; }
-.scoped-figure-platform .scoped-diagram-scroll:focus-visible { outline: 3px solid #1a7c9b; outline-offset: 3px; }
+.scoped-figure-platform .scoped-diagram-scroll { overflow: visible; min-width: 0; }
 .scoped-funding {
   margin: 38px 0 0;
   padding: 28px clamp(20px, 3vw, 36px);
@@ -256,8 +227,8 @@
   .scoped-home { padding: 18px 14px 50px; }
   .scoped-hero { padding: 20px; }
   .scoped-hero-brand img { width: 76px; max-height: 76px; }
-  .scoped-seismic-band { min-height: 110px; padding: 18px; }
-  .scoped-figure-platform .scoped-diagram-scroll img { min-width: 730px; }
+  /* Both original figures scale to the box instead of forcing horizontal scrolling. */
+  .scoped-figure-platform .scoped-diagram-scroll img { min-width: 0; max-width: 100%; }
   .scoped-figure figcaption { text-align: left; }
   .scoped-award-list, .scoped-team-grid { grid-template-columns: 1fr; }
   .scoped-resource-grid { grid-template-columns: 1fr; }
@@ -268,4 +239,154 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .scoped-home .scoped-resource { transition: none; }
+}
+
+
+/* Navigation refresh: keep the original SCOPED logo and every existing menu URL.
+   Tranquilpeak's 500px/2-column extra-wide menu is replaced with a compact,
+   single-column academic-project navigation. */
+#sidebar {
+  background: #f7f9fc;
+  background-image: none;
+  color: #314f63;
+  border-right: 1px solid #dfe7ee;
+  box-shadow: 4px 0 22px rgba(25, 63, 87, .035);
+}
+#sidebar .sidebar-profile { color: #234961; }
+#sidebar .sidebar-profile .sidebar-profile-title {
+  color: #173e59;
+  font-size: 17px;
+  font-weight: 750;
+  letter-spacing: .09em;
+}
+#sidebar .sidebar-profile .sidebar-profile-picture {
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link {
+  color: #405a6d;
+  text-decoration: none;
+}
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link:hover,
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link:focus-visible {
+  color: #0d6689;
+  background: #e8f2f8;
+}
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link:focus-visible {
+  outline: 2px solid #2685aa;
+  outline-offset: -2px;
+}
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-icon { color: #327d9b; }
+
+@media (min-width: 1024px) {
+  #sidebar[data-behavior="1"] {
+    width: 264px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  #main[data-behavior="1"] { width: calc(100% - 264px); }
+  #sidebar[data-behavior="1"] .sidebar-container {
+    position: static;
+    box-sizing: border-box;
+    padding: 26px 18px 36px;
+    width: 100%;
+    overflow: visible;
+  }
+  #sidebar[data-behavior="1"] .sidebar-profile {
+    height: auto;
+    padding: 8px 0 15px;
+    margin: 0 0 6px;
+  }
+  #sidebar[data-behavior="1"] .sidebar-profile .sidebar-profile-picture {
+    display: block;
+    width: 90px;
+    height: auto;
+    max-height: 98px;
+    margin: 0 auto 13px;
+    border-radius: 0;
+    object-fit: contain;
+  }
+  #sidebar[data-behavior="1"] .sidebar-profile .sidebar-profile-title {
+    display: block;
+    margin: 0;
+    line-height: 1.4;
+  }
+  #sidebar[data-behavior="1"] .sidebar-container > ul.sidebar-buttons {
+    display: block;
+    width: 100%;
+    margin: 15px 0 0;
+    padding: 18px 0 0;
+    border-top: 1px solid #e0e8ef;
+  }
+  #sidebar[data-behavior="1"] .sidebar-container > ul.sidebar-buttons::before {
+    display: block;
+    padding: 0 13px 8px;
+    color: #7990a1;
+    font-size: 10px;
+    font-weight: 750;
+    line-height: 1.4;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  #sidebar[data-behavior="1"] .sidebar-container > ul.sidebar-buttons:nth-of-type(1)::before { content: "Explore"; }
+  #sidebar[data-behavior="1"] .sidebar-container > ul.sidebar-buttons:nth-of-type(2)::before { content: "Connect"; }
+  #sidebar[data-behavior="1"] .sidebar-container > ul.sidebar-buttons:nth-of-type(3)::before { content: "Tools"; }
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button,
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button:nth-child(odd) {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    line-height: normal;
+    text-align: left;
+  }
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button .sidebar-button-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 43px;
+    padding: 10px 13px;
+    margin: 1px 0;
+    gap: 12px;
+    border-radius: 10px;
+    white-space: normal;
+    box-sizing: border-box;
+    font-weight: 620;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button .sidebar-button-link .sidebar-button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    width: 20px;
+    height: 22px;
+    min-width: 20px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button .sidebar-button-link .sidebar-button-desc {
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 1.35;
+    font-size: 13px;
+    letter-spacing: .01em;
+    overflow: visible;
+    white-space: normal;
+  }
+}
+/* Preserve Tranquilpeak's narrow collapsed sidebar and mobile slide-out behavior. */
+@media (max-width: 767px) {
+  #sidebar[data-behavior="1"] .sidebar-container { padding: 14px 10px 22px; }
+  #sidebar[data-behavior="1"] ul.sidebar-buttons li.sidebar-button .sidebar-button-link {
+    border-radius: 8px;
+  }
 }
