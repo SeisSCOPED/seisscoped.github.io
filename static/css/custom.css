@@ -23,7 +23,9 @@
   max-width: 1270px;
   margin: 0 auto;
   padding: 38px clamp(18px, 3vw, 48px) 64px;
-  background: #f7f9fc;
+  /* Original seismic-profile photograph is visible beneath the new content. */
+  background: linear-gradient(rgba(247, 249, 252, .91), rgba(247, 249, 252, .94)),
+              url('/images/DASpng.jpg') center top / cover no-repeat;
   color: #19334b;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -42,18 +44,21 @@
   border: 1px solid #dbe6ee;
   border-radius: 17px;
   padding: clamp(24px, 3.5vw, 48px);
-  background: linear-gradient(120deg, #ffffff 48%, #edf5fa 100%);
+  background: linear-gradient(105deg, rgba(255,255,255,.97) 26%, rgba(248,251,254,.85) 64%, rgba(235,244,250,.69)),
+              url('/images/DASpng.jpg') center / cover no-repeat;
   box-shadow: 0 12px 34px rgba(12, 44, 75, .055);
 }
 .scoped-hero-copy, .scoped-hero-graphic { min-width: 0; }
 .scoped-hero-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 21px; }
 .scoped-hero-brand img {
-  width: 64px;
-  height: 64px;
+  /* Render the exact original logo image without a crop, mask or recoloring. */
+  width: 104px;
+  height: auto;
+  max-height: 104px;
   object-fit: contain;
-  border-radius: 9px;
-  border: 1px solid rgba(27, 80, 115, .09);
-  background: white;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 .scoped-hero-brand span, .scoped-eyebrow {
   color: #187588;
@@ -132,54 +137,71 @@
   line-height: 1.2;
 }
 .scoped-section-head p { color: #5c7183; font-size: 15px; margin: 0; }
-.scoped-architecture {
-  padding: 28px;
-  background: #fff;
+/* Keep the original image assets and the seismology visual identity. */
+#sidebar {
+  background-color: #e7eef4;
+  background-image: linear-gradient(rgba(241, 248, 252, .88), rgba(241, 248, 252, .92)),
+                    url('/images/DASpng.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.scoped-seismic-band {
+  display: flex;
+  align-items: flex-end;
+  min-height: 136px;
+  margin-top: 20px;
+  padding: 25px;
+  border: 1px solid #cbdce5;
+  border-radius: 13px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(12, 44, 70, .79), rgba(12, 44, 70, .12)),
+              url('/images/DASpng.jpg') center 43% / cover no-repeat;
+}
+.scoped-seismic-band span {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
+}
+.scoped-original-slide {
+  margin: 0;
   border: 1px solid #dbe6ef;
-  border-radius: 15px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
   box-shadow: 0 8px 26px rgba(11, 45, 70, .035);
 }
-.scoped-architecture-top { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; margin-bottom: 17px; }
-.scoped-arch-tag { color: #5b7180; font-size: 10px; font-weight: 750; letter-spacing: .13em; }
-.scoped-arch-arrow { font-size: 18px; color: #1689a8; line-height: 1; }
-.scoped-architecture-top strong {
-  background: #e3f0f6;
-  border: 1px solid #a9cddd;
-  border-radius: 7px;
-  color: #145579;
-  padding: 9px 28px;
-  font-size: 14px;
-}
-.scoped-architecture-top small { color: #678398; font-size: 11px; }
-.scoped-architecture-row { display: grid; gap: 10px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.scoped-architecture-services { border-top: 1px dashed #c6d9e4; padding-top: 18px; }
-.scoped-architecture-services > div {
-  padding: 17px 12px;
+.scoped-original-slide-link {
+  display: block;
+  overflow: hidden;
   border-radius: 8px;
-  border: 1px solid #c8dce9;
-  background: #f4f9fc;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
+  background: #fff;
 }
-.scoped-architecture-services strong { font-size: 13px; color: #1a5678; line-height: 1.3; }
-.scoped-architecture-services small { font-size: 11px; color: #688394; line-height: 1.45; }
-.scoped-architecture-label { color: #467d93; font-size: 10px; text-align: center; font-weight: 750; letter-spacing: .15em; margin: 24px 0 12px; }
-.scoped-architecture-apps > span {
-  border: 1px solid #d6e0ef;
-  background: #eaf0fa;
-  color: #285879;
+.scoped-original-slide-crop {
+  /* The original slide is kept intact; only the central architecture is framed. */
+  display: block;
+  width: 100%;
+  min-height: 210px;
+  aspect-ratio: 2.9 / 1;
+  background-image: url('/images/SCOPED_slide.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 60%;
+  transition: filter .15s ease;
+}
+.scoped-original-slide-link:hover .scoped-original-slide-crop { filter: brightness(.98); }
+.scoped-original-slide figcaption {
   font-size: 12px;
-  font-weight: 600;
-  padding: 13px 10px;
-  border-radius: 7px;
-  text-align: center;
-  line-height: 1.35;
+  line-height: 1.5;
+  color: #577185;
+  padding: 12px 5px 3px;
 }
-.scoped-architecture-compute { display: flex; justify-content: center; gap: 12px; margin-top: 21px; }
-.scoped-architecture-compute span { background: #e8edf1; border-radius: 7px; font-size: 12px; font-weight: 700; color: #3c5265; padding: 10px 19px; }
+.scoped-home .scoped-original-slide figcaption a {
+  color: #126a8a;
+  font-weight: 700;
+  text-decoration: underline;
+}
 .scoped-funding {
   margin: 38px 0 0;
   padding: 28px clamp(20px, 3vw, 36px);
@@ -209,7 +231,7 @@
 .scoped-award-list li span { flex: 1 1 auto; }
 .scoped-funding .scoped-award-list a, #main .post-content .scoped-funding .scoped-award-list a { color: #0c678d; text-decoration: underline; font-weight: 750; white-space: nowrap; }
 .scoped-funding .scoped-award-list a:hover { color: #073c5c; }
-.scoped-resource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.scoped-resource-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .scoped-home .scoped-resource {
   display: flex;
   flex-direction: column;
@@ -241,15 +263,13 @@
 @media (max-width: 700px) {
   .scoped-home { padding: 18px 14px 50px; }
   .scoped-hero { padding: 20px; }
-  .scoped-hero-brand img { width: 50px; height: 50px; }
-  .scoped-architecture { padding: 16px; }
-  .scoped-architecture-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .scoped-hero-brand img { width: 76px; max-height: 76px; }
+  .scoped-seismic-band { min-height: 110px; padding: 18px; }
+  .scoped-original-slide-crop { aspect-ratio: 2.1 / 1; min-height: 180px; }
   .scoped-award-list, .scoped-team-grid { grid-template-columns: 1fr; }
   .scoped-resource-grid { grid-template-columns: 1fr; }
-  .scoped-architecture-compute { flex-wrap: wrap; gap: 8px; }
 }
 @media (max-width: 400px) {
-  .scoped-architecture-row { grid-template-columns: 1fr; }
   .scoped-award-list li { flex-wrap: wrap; }
   .scoped-hero h1 { font-size: 34px; }
 }

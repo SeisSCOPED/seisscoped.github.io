@@ -12,7 +12,7 @@
         <section class="scoped-hero" aria-labelledby="scoped-hero-heading">
           <div class="scoped-hero-copy">
             <div class="scoped-hero-brand">
-              <img src="{{ "images/scoped_logo.jpg" | relURL }}" alt="SCOPED logo" width="70" height="70" />
+              <img src="{{ "images/scoped_logo.jpg" | relURL }}" alt="Original SCOPED project logo" width="104" height="104" />
               <span>NSF CSSI &nbsp;/&nbsp; SCOPED</span>
             </div>
             <h1 id="scoped-hero-heading">Seismic research, <em>connected.</em></h1>
@@ -34,29 +34,22 @@
           </div>
         </section>
 
+        <div class="scoped-seismic-band" aria-label="Seismic profile image from the original SCOPED website">
+          <span>SEISMIC DATA · OPEN SCIENCE · HIGH-PERFORMANCE COMPUTING</span>
+        </div>
+
         <section class="scoped-section scoped-section-overview" aria-labelledby="scoped-overview-title">
           <div class="scoped-section-head">
             <span class="scoped-eyebrow">Platform overview</span>
             <h2 id="scoped-overview-title">From seismic data to scientific discovery</h2>
-            <p>An editable view of the computing architecture highlighted in the original SCOPED project slide.</p>
+            <p>The original project architecture is shown below, preserving the layout and relationships from the SCOPED slide instead of redrawing them.</p>
           </div>
-          <div class="scoped-architecture">
-            <div class="scoped-architecture-top"><span class="scoped-arch-tag">USERS</span><span class="scoped-arch-arrow" aria-hidden="true">↓</span><strong>SCOPED Gateway</strong><small>Tapis API</small></div>
-            <div class="scoped-architecture-row scoped-architecture-services" aria-label="Platform services">
-              <div><strong>Common containers</strong><small>Portable computing environments</small></div>
-              <div><strong>SCOPED toolkits</strong><small>Research applications</small></div>
-              <div><strong>Optimized containers</strong><small>Performance across platforms</small></div>
-              <div><strong>SeismoDB</strong><small>Seismic data services</small></div>
-            </div>
-            <div class="scoped-architecture-label">SEISMOLOGY APPLICATIONS</div>
-            <div class="scoped-architecture-row scoped-architecture-apps">
-              <span>Time-series correlations</span>
-              <span>Earthquake parameters</span>
-              <span>Wave simulations</span>
-              <span>Seismic imaging</span>
-            </div>
-            <div class="scoped-architecture-compute"><span>Laptops</span><span>HPC clusters</span><span>Cloud</span></div>
-          </div>
+          <figure class="scoped-original-slide">
+            <a class="scoped-original-slide-link" href="{{ "images/SCOPED_slide.jpg" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="View the original SCOPED project slide in full">
+              <div class="scoped-original-slide-crop" role="img" aria-label="Cropped portion of the original SCOPED architecture slide, including the Gateway, container workflows, seismic applications, data storage, and computing resources"></div>
+            </a>
+            <figcaption>Architecture excerpt from the original SCOPED project slide. <a href="{{ "images/SCOPED_slide.jpg" | relURL }}" target="_blank" rel="noopener noreferrer">Open the full slide</a> for the complete reference.</figcaption>
+          </figure>
         </section>
 
         {{ partial "scoped/funding.html" . }}
@@ -68,6 +61,7 @@
             <p>Discover the SCOPED infrastructure and software used in the project's research and workshops.</p>
           </div>
           <div class="scoped-resource-grid">
+            <a href="{{ "/gateway/" | relURL }}" class="scoped-resource"><span>SCOPED PLATFORM</span><strong>Gateway</strong><small>Launch the SCOPED Gateway (Tapis) <b aria-hidden="true">→</b></small></a>
             <a href="https://github.com/orgs/SeisSCOPED/packages" class="scoped-resource"><span>SCOPED INFRASTRUCTURE</span><strong>Container registry</strong><small>Explore project container packages <b aria-hidden="true">↗</b></small></a>
             <a href="https://github.com/SeisSCOPED/container-base" class="scoped-resource"><span>SCOPED INFRASTRUCTURE</span><strong>Base container</strong><small>View the shared container base <b aria-hidden="true">↗</b></small></a>
             <a href="{{ "/about/scoped/" | relURL }}" class="scoped-resource"><span>RESEARCH ECOSYSTEM</span><strong>Scientific software</strong><small>Browse seismic codes and workflows <b aria-hidden="true">→</b></small></a>
