@@ -38,18 +38,39 @@
           <span>SEISMIC DATA · OPEN SCIENCE · HIGH-PERFORMANCE COMPUTING</span>
         </div>
 
-        <section class="scoped-section scoped-section-overview" aria-labelledby="scoped-overview-title">
+        <section class="scoped-section scoped-mission" aria-labelledby="scoped-mission-title">
+          <div class="scoped-section-head">
+            <span class="scoped-eyebrow">Mission</span>
+            <h2 id="scoped-mission-title">Supporting research across seismic data, cloud and HPC</h2>
+            <p>SCOPED connects open-source seismic workflows and research computing to make data-intensive analysis and numerical modeling more accessible to the seismology community.</p>
+          </div>
+        </section>
+
+        <section class="scoped-section scoped-figures-section" aria-labelledby="scoped-overview-title">
           <div class="scoped-section-head">
             <span class="scoped-eyebrow">Platform overview</span>
-            <h2 id="scoped-overview-title">From seismic data to scientific discovery</h2>
-            <p>The original project architecture is shown below, preserving the layout and relationships from the SCOPED slide instead of redrawing them.</p>
+            <h2 id="scoped-overview-title">Science and cyberinfrastructure</h2>
           </div>
-          <figure class="scoped-original-slide">
-            <a class="scoped-original-slide-link" href="{{ "images/SCOPED_slide.jpg" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="View the original SCOPED project slide in full">
-              <div class="scoped-original-slide-crop" role="img" aria-label="Cropped portion of the original SCOPED architecture slide, including the Gateway, container workflows, seismic applications, data storage, and computing resources"></div>
-            </a>
-            <figcaption>Architecture excerpt from the original SCOPED project slide. <a href="{{ "images/SCOPED_slide.jpg" | relURL }}" target="_blank" rel="noopener noreferrer">Open the full slide</a> for the complete reference.</figcaption>
-          </figure>
+          <div class="scoped-original-figures">
+            <figure class="scoped-figure scoped-figure-science">
+              <div class="scoped-figure-art">
+                <!-- Show only the original science graphic, not the surrounding project slide. -->
+                <svg viewBox="1664 231 1276 1445" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SCOPED science overview showing seismic data, HPC and cloud computing, and their interconnected seismology applications">
+                  <image href="{{ "images/SCOPED_slide.jpg" | relURL }}" x="0" y="0" width="3000" height="1688"/>
+                </svg>
+              </div>
+              <figcaption>Seismic data, computing and science applications</figcaption>
+            </figure>
+            <figure class="scoped-figure scoped-figure-platform">
+              <div class="scoped-figure-art scoped-diagram-scroll" tabindex="0" role="region" aria-label="Scroll to view the complete SCOPED platform diagram on narrow screens">
+                <!-- Preserve the architecture's original labels, connectors and arrow directions. -->
+                <svg viewBox="70 593 1510 827" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original SCOPED platform schematic showing users, SCOPED Gateway with Tapis API, containers, applications, hardware, SeismoDB, archives and external data facilities">
+                  <image href="{{ "images/SCOPED_slide.jpg" | relURL }}" x="0" y="0" width="3000" height="1688"/>
+                </svg>
+              </div>
+              <figcaption>SCOPED computing and data architecture</figcaption>
+            </figure>
+          </div>
         </section>
 
         {{ partial "scoped/funding.html" . }}

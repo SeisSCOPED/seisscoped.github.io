@@ -165,44 +165,34 @@
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
 }
-.scoped-original-slide {
+/* The original SCOPED figures, faithfully framed from the existing slide.
+   No redrawn lines, renamed components, new logo, or paper-style numbering. */
+.scoped-mission { margin-top: 36px; }
+.scoped-mission .scoped-section-head { max-width: 770px; }
+.scoped-original-figures { display: grid; gap: 27px; justify-items: center; }
+.scoped-figure {
   margin: 0;
-  border: 1px solid #dbe6ef;
+  width: 100%;
+  min-width: 0;
   background: #fff;
+  border: 1px solid #dbe6ef;
   border-radius: 14px;
-  padding: 15px;
+  padding: clamp(12px, 2.3vw, 25px);
   box-shadow: 0 8px 26px rgba(11, 45, 70, .035);
 }
-.scoped-original-slide-link {
-  display: block;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #fff;
-}
-.scoped-original-slide-crop {
-  /* The original slide is kept intact; only the central architecture is framed. */
-  display: block;
-  width: 100%;
-  min-height: 210px;
-  aspect-ratio: 2.9 / 1;
-  background-image: url('/images/SCOPED_slide.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 60%;
-  transition: filter .15s ease;
-}
-.scoped-original-slide-link:hover .scoped-original-slide-crop { filter: brightness(.98); }
-.scoped-original-slide figcaption {
-  font-size: 12px;
-  line-height: 1.5;
+.scoped-figure-science { max-width: 760px; }
+.scoped-figure-platform { max-width: 1160px; }
+.scoped-figure-art { background: #fff; }
+.scoped-figure svg { display: block; width: 100%; height: auto; }
+.scoped-figure figcaption {
+  margin: 13px 0 1px;
   color: #577185;
-  padding: 12px 5px 3px;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: center;
 }
-.scoped-home .scoped-original-slide figcaption a {
-  color: #126a8a;
-  font-weight: 700;
-  text-decoration: underline;
-}
+.scoped-figure-platform .scoped-diagram-scroll { overflow-x: auto; overflow-y: hidden; }
+.scoped-figure-platform .scoped-diagram-scroll:focus-visible { outline: 3px solid #1a7c9b; outline-offset: 3px; }
 .scoped-funding {
   margin: 38px 0 0;
   padding: 28px clamp(20px, 3vw, 36px);
@@ -266,7 +256,8 @@
   .scoped-hero { padding: 20px; }
   .scoped-hero-brand img { width: 76px; max-height: 76px; }
   .scoped-seismic-band { min-height: 110px; padding: 18px; }
-  .scoped-original-slide-crop { aspect-ratio: 2.1 / 1; min-height: 180px; }
+  .scoped-figure-platform .scoped-diagram-scroll svg { min-width: 730px; }
+  .scoped-figure figcaption { text-align: left; }
   .scoped-award-list, .scoped-team-grid { grid-template-columns: 1fr; }
   .scoped-resource-grid { grid-template-columns: 1fr; }
 }
