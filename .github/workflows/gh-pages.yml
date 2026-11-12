@@ -43,7 +43,8 @@ jobs:
             public/js/
             public/fonts/
             public/images/scoped_logo.jpg
-            public/images/SCOPED_slide.jpg
+            public/images/scoped_science_overview.png
+            public/images/scoped_platform_schematic.png
             public/images/scoped_banner.jpg
             public/images/DASpng.jpg
 

@@ -165,8 +165,8 @@
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
 }
-/* The original SCOPED figures, faithfully framed from the existing slide.
-   No redrawn lines, renamed components, new logo, or paper-style numbering. */
+/* Display the two original standalone SCOPED images without cropping or redrawing.
+   Keep the original logo, navigation and seismic background unchanged. */
 .scoped-mission { margin-top: 36px; }
 .scoped-mission .scoped-section-head { max-width: 770px; }
 .scoped-original-figures { display: grid; gap: 27px; justify-items: center; }
@@ -183,7 +183,8 @@
 .scoped-figure-science { max-width: 760px; }
 .scoped-figure-platform { max-width: 1160px; }
 .scoped-figure-art { background: #fff; }
-.scoped-figure svg { display: block; width: 100%; height: auto; }
+.scoped-figure .scoped-figure-image-link { display: block; }
+.scoped-figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 .scoped-figure figcaption {
   margin: 13px 0 1px;
   color: #577185;
@@ -256,7 +257,7 @@
   .scoped-hero { padding: 20px; }
   .scoped-hero-brand img { width: 76px; max-height: 76px; }
   .scoped-seismic-band { min-height: 110px; padding: 18px; }
-  .scoped-figure-platform .scoped-diagram-scroll svg { min-width: 730px; }
+  .scoped-figure-platform .scoped-diagram-scroll img { min-width: 730px; }
   .scoped-figure figcaption { text-align: left; }
   .scoped-award-list, .scoped-team-grid { grid-template-columns: 1fr; }
   .scoped-resource-grid { grid-template-columns: 1fr; }

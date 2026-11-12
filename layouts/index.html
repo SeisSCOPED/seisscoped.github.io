@@ -54,19 +54,17 @@
           <div class="scoped-original-figures">
             <figure class="scoped-figure scoped-figure-science">
               <div class="scoped-figure-art">
-                <!-- Show only the original science graphic, not the surrounding project slide. -->
-                <svg viewBox="1664 231 1276 1445" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SCOPED science overview showing seismic data, HPC and cloud computing, and their interconnected seismology applications">
-                  <image href="{{ "images/SCOPED_slide.jpg" | relURL }}" x="0" y="0" width="3000" height="1688"/>
-                </svg>
+                <a class="scoped-figure-image-link" href="{{ "images/scoped_science_overview.png" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="Open the original science overview image at full resolution">
+                  <img src="{{ "images/scoped_science_overview.png" | relURL }}" width="1050" height="1200" loading="lazy" decoding="async" alt="SCOPED science overview connecting seismic data, HPC and cloud computing to wavefield simulation, data analysis, Earth structure and evolution, and seismic source monitoring"/>
+                </a>
               </div>
               <figcaption>Seismic data, computing and science applications</figcaption>
             </figure>
             <figure class="scoped-figure scoped-figure-platform">
-              <div class="scoped-figure-art scoped-diagram-scroll" tabindex="0" role="region" aria-label="Scroll to view the complete SCOPED platform diagram on narrow screens">
-                <!-- Preserve the architecture's original labels, connectors and arrow directions. -->
-                <svg viewBox="70 593 1510 827" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original SCOPED platform schematic showing users, SCOPED Gateway with Tapis API, containers, applications, hardware, SeismoDB, archives and external data facilities">
-                  <image href="{{ "images/SCOPED_slide.jpg" | relURL }}" x="0" y="0" width="3000" height="1688"/>
-                </svg>
+              <div class="scoped-figure-art scoped-diagram-scroll" tabindex="0" role="region" aria-label="Scroll horizontally to explore the full SCOPED platform schematic on narrow screens">
+                <a class="scoped-figure-image-link" href="{{ "images/scoped_platform_schematic.png" | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="Open the original SCOPED platform schematic at full resolution">
+                  <img src="{{ "images/scoped_platform_schematic.png" | relURL }}" width="1631" height="886" loading="lazy" decoding="async" alt="SCOPED platform schematic with users, the Tapis Gateway, containers, computing applications, laptops, HPC clusters, cloud resources, SeismoDB, SCOPED Data Archive, and external data facilities"/>
+                </a>
               </div>
               <figcaption>SCOPED computing and data architecture</figcaption>
             </figure>
