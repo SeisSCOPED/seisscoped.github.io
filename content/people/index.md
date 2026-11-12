@@ -37,7 +37,7 @@ date: 2022-12-08T02:15:10+08:00
 * [website](https://www.tacc.utexas.edu/about/directory/ian-wang)
 * Github [![Personal Github](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/wangyinz)
 
-**Wenyang Zhang**: Texas Advanced Computing Center (TACC), University of Texas at Austin
+**Wenyang Zhang**: Texas Advanced Computing Center (TACC), The University of Texas at Austin
 * contact: wzhang - at - tacc.utexas.edu
 
 # Support Postdocs and Students
